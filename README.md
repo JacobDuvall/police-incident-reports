@@ -2,7 +2,7 @@
 # Author: Jacob Duvall
 
 # Description:
-         - This program takes an incident PDF from the Norman Police Department's Daily Activity Reports Listing found at http://normanpd.normanok.gov/content/daily-activity and returns a formatted list that relays the nature of that day's incidents and the frequency of that particular incident for that particular date. 
+This program takes an incident PDF from the Norman Police Department's Daily Activity Reports Listing found at http://normanpd.normanok.gov/content/daily-activity and returns a formatted list that relays the nature of that day's incidents and the frequency of that particular incident for that particular date. 
 
 # How To Run:
  From terminal, run via: python main.py --incidents <url>
