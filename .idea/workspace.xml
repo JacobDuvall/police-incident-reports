@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="361eb21e-7098-425e-b97f-1fa03e637967" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/march1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project_0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/norman.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/normanpd.db" beforeDir="false" afterPath="$PROJECT_DIR$/normanpd.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project0.py" beforeDir="false" afterPath="$PROJECT_DIR$/project0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" />
-    </list>
+    <list default="true" id="361eb21e-7098-425e-b97f-1fa03e637967" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="99" />
+            <state relative-caret-position="748">
+              <caret line="44" column="69" selection-end-line="195" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -249,7 +237,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4062000" />
+    <option name="totallyTimeSpent" value="4661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1088" y="-667" width="1096" height="1896" extended-state="6" />
@@ -350,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="99" />
+        <state relative-caret-position="748">
+          <caret line="44" column="69" selection-end-line="195" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
