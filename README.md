@@ -32,5 +32,7 @@ To display the incident types and counts, I write a sql query to group incidents
  
  # Test File:
  My code has a test file called test_functions. Inside this file I test the database connection, the ability to download PDFs, the existence of incidents table, and that the output of status matches the expected output given via the rubrik. 
+ 
+ To run the test file, execute command: pipenv run pytest
 
  
