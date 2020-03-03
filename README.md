@@ -35,6 +35,11 @@ To display the incident types and counts, I write a sql query to group incidents
  
  To run the test file, execute command: pipenv run pytest
  
+ ## How I handle edge cases:
+ * if there is no incident listed, I store this in the datebase as "No Incident".
+ * I always assume each incident should have 5 field. If an item has 4 fields, I say it is missing an incident. If an item has 6 fields, I say it has an address on two lines.
+ * So far handling edge cases this way has handled 100% of observable PDFs. Therefore, I believe that my project covers all cases it could encounter given the current format of Norman PD's activity reports. 
+ 
  ### Additional Documentation
  For additional information on the individual working of any piece of the process, please look at the project0.py file where all functions are individually annotated with their purpose. 
 
