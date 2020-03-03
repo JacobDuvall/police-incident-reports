@@ -11,9 +11,6 @@ import pandas as pd
 
 # fetch the incidents from Norman Police incidents pdf
 def fetch_incidents(url):
-    #url = ("http://normanpd.normanok.gov/filebrowser_download/"
-    #       "657/2020-02-20%20Daily%20Incident%20Summary.pdf")
-
     return urllib.urlopen(url).read()
 
 
@@ -59,22 +56,30 @@ def format_pages(all_pages):
 def get_lines(all_pages):
     all_lines = list()
     line = list()
+    tilde = False
+    lat = ''
 
     entries_split = all_pages.split('\n')  # split entries by new line
 
     for entry in entries_split:
+        if tilde is True:
+            tilde = False
+            lat_long = lat + entry
+            line.append(lat_long)
+            continue
         if not is_norman_police_or_daily_summary(entry):
-            if not is_lat_long(entry):
+            if is_lat_long(entry) == 0:
                 if is_date_time(entry):
                     all_lines.append(line)
                     line = list()
                     line.append(entry)
                 else:
                     line.append(entry)
-                    pass
-            else:
+            if is_lat_long(entry) == 1:
                 line.append(entry)
-                pass
+            if is_lat_long(entry) == 2:
+                lat = entry
+                tilde = True
 
     all_lines = all_lines[1:]  # remove header
 
@@ -85,15 +90,20 @@ def get_lines(all_pages):
 # if no incident written, report as "No Incident"
 # if something else, remove the line item
 def fix_edge_lines(all_lines):
+    new_list = list()
     for i in range(len(all_lines)):
         if len(all_lines[i]) == 6:
             all_lines[i][2:4] = [''.join(all_lines[i][2:4])]
+            new_list.append(all_lines[i])
         if len(all_lines[i]) == 4:
             all_lines[i].insert(3, 'No Incident')
+            new_list.append(all_lines[i])
         if len(all_lines[i]) < 4 or len(all_lines[i]) > 6:
-            all_lines[i].remove(all_lines[i])
+            pass
+        else:
+            new_list.append(all_lines[i])
 
-    return all_lines
+    return new_list
 
 
 # is entry the header for NORMAN POLICE DEPARTMENT or Daily Incident Summary?
@@ -106,10 +116,12 @@ def is_norman_police_or_daily_summary(entry):
 
 # is entry a latitude or longitude?
 def is_lat_long(entry):
-    if ';' in entry:  # only seeing ';' char in lat/longs
-        return True
+    if ';-' in entry:  # only seeing ';' or '~' char in lat/longs
+        return 1
+    if '~' in entry:
+        return 2
     else:
-        return False
+        return 0
 
 
 # is entry a date time?
@@ -168,6 +180,7 @@ def populate_db(incidents):
 
 # print nature and the nature count from incidents
 def status():
+    incident_string = ''
     conn = connect_db('normanpd.db')
 
     df = pd.read_sql_query('SELECT '
@@ -176,5 +189,7 @@ def status():
                            'FROM incidents GROUP BY nature', conn)
 
     for nature, count in zip(df['nature'], df['COUNT(nature)']):
-        print(nature, '|', count, sep='')
+        incident_string = incident_string + nature + '|' + str(count) + '\n'
+
+    return incident_string
 

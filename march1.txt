@@ -1,0 +1,68 @@
+Abdominal Pains/Problems|2
+Alarm|20
+Alarm Holdup/Panic|3
+Animal Complaint|2
+Animal Injured|1
+Animal Vicious|1
+Animal at Large|1
+Assist Fire|1
+Bar Check|1
+Barking Dog|1
+Breathing Problems|6
+Burglary|1
+COP DDACTS|5
+COP Problem Solving|3
+COP Relationships|2
+Check Area|2
+Chest Pain|6
+Contact a Subject|16
+Disturbance/Domestic|13
+Drunk Driver|2
+Escort/Transport|2
+Falls|14
+Fire Alarm|4
+Fire Carbon Monoxide Alarm|1
+Fire Commercial|2
+Fire Dumpster|1
+Fire Odor Investigation|1
+Fire Residential|9
+Follow Up|1
+Foot Patrol|1
+Found Item|1
+Fraud|1
+Heart Problems/AICD|2
+Hemorrhage/Lacerations|4
+Hit and Run|2
+Indecent Exposure|1
+Item Assignment|2
+Larceny|5
+Loud Party|2
+MVA Non Injury|5
+Medical Call Pd Requested|2
+Motorist Assist|5
+Mutual Aid|1
+Noise Complaint|2
+Officer Needed Nature Unk|1
+Open Door/Premises Check|4
+Parking Problem|4
+Pick Up Partner|3
+Preg/Child Birth/Miscarriage|2
+Public Assist|3
+Runaway or Lost Child|2
+Shooting|1
+Shooting Stabbing Penetrating|2
+Shots Heard|4
+Sick Person|9
+Stand By EMS|1
+Stolen Vehicle|4
+Stroke|2
+Supplement Report|3
+Suspicious|10
+Traffic Stop|140
+Transfer/Interfacility|19
+Traumatic Injury|2
+Trespassing|2
+Unconscious/Fainting|2
+Unknown Problem/Man Down|2
+Vandalism|2
+Welfare Check|17

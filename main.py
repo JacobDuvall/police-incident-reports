@@ -19,7 +19,8 @@ def main(url):
     project0.populate_db(incidents)
 
     # Print Status
-    project0.status()
+    status = project0.status()
+    print(status)
 
 
 if __name__ == '__main__':
